@@ -8,8 +8,6 @@ Current Top Simulation Files: Benes_8_complete_tb.v
 
 For single test, use Benes_8_tb.v
 
-Not All Files Are Useful
-
 File Generation: 
 1. permutation.py -> n = 4 -> permutation_4.txt (All 4 x 4 Benes Network Solution)
 2. benes_4_comb.py -> benes_4.v
