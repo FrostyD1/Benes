@@ -1,10 +1,10 @@
 Project: 8 x 8 Benes Network
 Author: DONG TIANHAO
-Date: 2025/01/09
-Version: 1.0
+Date: 2025/01/14
+Version: 2.0
 
-Current Top Module: Benes_8.v
-Current Top Simulation Files: Benes_8_complete_tb.v
+Current Top Module: Benes_8p.v (pipelined version)
+Current Top Simulation Files: Benes_8p_tb.v
 
 For single test, use Benes_8_tb.v
 
@@ -16,12 +16,14 @@ File Generation:
 
 Vivado Project Version: 2019.2
 Constraint: CLK_cons.xdc
-Current Clock Rate: 500 MHZ
-Current WNS: 500 ps
-Current WHS: 57 ps
+Current Clock Rate: 770 MHZ
+Current WNS: +52 ps
+Current WHS: +28 ps
+Current TPWS: +0
+
+When clk set at period 1.1ns, WNS, WHS still positive, but TPWS degraded, being confused how to inmprove TPWS.
 
 Next Goal:
-1. pipeline
-2. 16 x 16 and 32 x 32
-3. parameterize
-4. improve WHS
+1. 16 x 16 and 32 x 32 version
+2. Assembling 2x2 switches and apply routing results to simultate and verify.
+3. Maybe look into OXC Switches implementation (Maybe RF or Analog design).
